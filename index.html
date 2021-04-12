@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pangea.app — We turn College Students into Freelancers</title>
+        <link rel="stylesheet" href="test.css" type="text/css">
+        <link rel="stylesheet" href="mobile.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $( document ).ready(function() {
+                console.log( "ready!" );
+                var wrap = $("#header");
+                var voteCount = 100;
+
+                $(window).on("scroll", function(e) { 
+                    // console.log($(window).scrollTop());
+                    if ($(window).scrollTop() > 260) {
+                        wrap.removeClass("hidden");
+                    } else {
+                        wrap.addClass("hidden");
+                    }
+                });
+
+                $(".vote-button").click(function(){
+                    voteCount++;
+                    $(".vote-count").text(voteCount);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="background-cover"></div>
+        <div id="header" class="super-container hidden">
+            <div class="super">
+                <div class="super-post">
+                    <img class="super-thumbnail" src="Assets/thumbnail.webp">
+                    <div class="super-post-info">
+                        <h1>Pangea.app</h1>
+                        <h2>We turn College Students into Freelancers</h2>
+                    </div>
+                </div>
+                <div class="button-container" style="margin-right: 15px;">
+                    <div class="get-button">
+                        <div class="button-text">GET IT</div>
+                    </div>
+                    <div class="vote-button">
+                        <img class="button-img" src="Assets/Triangle.png">
+                        <div class="button-text" style="margin-right: 4px;">UPVOTE</div>
+                        <div class="button-text vote-count">100</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+        <div class="container">
+            <div class="top-bar">
+                <img class="thumbnail" src="Assets/thumbnail.webp">
+                <div class="headlines">
+                    <h1>Pangea.app</h1>
+                    <h2>We turn College Students into Freelancers</h2>
+                    <div class="tags">
+                        <div class="tag">EDUCATION</div>
+                        <div class="tag">EDUCATION</div>
+                        <div class="tag">EDUCATION</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="two-columns">
+                <div class="sidebar">
+                    <div class="button-container">
+                        <div class="get-button">
+                            <div class="button-text">GET IT</div>
+                        </div>
+                        <div class="vote-button">
+                            <img class="button-img" src="Assets/Triangle.png">
+                            <div class="button-text" style="margin-right: 4px;">UPVOTE</div>
+                            <div class="button-text vote-count">100</div>
+                        </div>
+                    </div>
+                    <div class="avatars">
+                        <div class="avatar-wrapper">
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                        </div>
+                        <div class="avatar-wrapper">
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                            <div class="avatar"></div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card" style="margin-top: 40px;">
+                        <h6 style="margin-bottom: 10px;">Hunter</h6>
+                        <div class="maker-container">
+                            <img class="maker-img" src="Assets/Adam.png">
+                            <div class="maker-info">
+                                <h4 style="height: 20px;">First Last</h4>
+                                <h5 style="height: 20px;">Partner at Y Combinator</h5>
+                            </div>
+                        </div>
+
+                        <h6 style="margin: 10px 0;">Makers</h6>
+                        <div class="makers">
+                            <div class="maker-container">
+                                <img class="maker-img" src="Assets/Adam.png">
+                                <div class="maker-info">
+                                    <h4 style="height: 20px;">Adam Alpert</h4>
+                                    <h5 style="height: 20px;">CEO at Pangea.app</h5>
+                                </div>
+                            </div>
+                            <div class="maker-container" style="margin-top: 20px;">
+                                <img class="maker-img" src="Assets/John.png">
+                                <div class="maker-info">
+                                    <h4 style="height: 20px;">John Tambunting</h4>
+                                    <h5 style="height: 20px;">CTO at Pangea.app</h5>
+                                </div>
+                            </div>
+                            <div class="maker-container" style="margin-top: 20px;"> 
+                                <img class="maker-img" src="Assets/Tae.png">
+                                <div class="maker-info">
+                                    <h4 style="height: 20px;">Tae Sam Lee</h4>
+                                    <h5 style="height: 20px;">Product Designer at Pangea.app</h5>
+                                </div>
+                            </div>
+                            <div class="maker-container" style="margin-top: 20px;"> 
+                                <img class="maker-img" src="Assets/Kacie.png">
+                                <div class="maker-info">
+                                    <h4 style="height: 20px;">Kacie Galligan</h4>
+                                    <h5 style="height: 20px;">Project Manager at Pangea.app</h5>
+                                </div>
+                            </div>
+                            <div class="maker-container" style="margin-top: 20px;"> 
+                                <img class="maker-img" src="Assets/Andrew.png">
+                                <div class="maker-info">
+                                    <h4 style="height: 20px;">Andrew Thompson</h4>
+                                    <h5 style="height: 20px;">Art Director at Pangea.app</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainbar">
+                    <div class="post">
+                        <div class="image-wrapper"> <div class="image-carousel">
+                            <img class="key-image" id="img1" src="Assets/Slide 1.webp">
+                            <img class="key-image" id="img2" src="Assets/Slide 2.webp">
+                            <img class="key-image" id="img3" src="Assets/Slide 3.webp">
+                            <img class="key-image" id="img4" src="Assets/Slide 4.webp">
+                            <img class="key-image" id="img5" src="Assets/Slide 5.webp" style="margin-right: 0 !important;">
+                            <!-- <img class="key-image" id="img6" src="Assets/Slide 6.webp" style="margin-right: 0 !important;"> -->
+                        </div> </div>
+
+                        <div class="jumpers">
+                            <a href="#img1"><img class="jumper" src="Assets/Slide 1.webp"></a>
+                            <a href="#img2"><img class="jumper" src="Assets/Slide 2.webp"></a>
+                            <a href="#img3"><img class="jumper" src="Assets/Slide 3.webp"></a>
+                            <a href="#img4"><img class="jumper" src="Assets/Slide 4.webp"></a>
+                            <a href="#img5"><img class="jumper" src="Assets/Slide 5.webp"></a>
+                            <!-- <a href="#img6"><img class="jumper" src="Assets/Slide 6.webp"></a> -->
+                        </div>
+
+                        <div class="description">
+                            <p>Hypotheses venture scrum project social media accelerator value proposition business-to-business vesting period ownership market client. Virality funding buyer branding ramen twitter supply chain venture infographic startup series A financing beta. Disruptive supply chain seed round handshake MVP. Success iPad iPhone monetization.</p>
+                            <p>Alpha android channels termsheet A/B testing buzz vesting period infographic business model canvas. Founders interaction design backing ramen churn rate investor startup non-disclosure agreement holy grail low hanging fruit graphical user interface research & development venture. Technology backing bootstrapping. Social media funding crowdsource ownership responsive web design buzz traction monetization hypotheses android. Traction metrics handshake business-to-consumer social media market pivot hackathon bandwidth iteration network effects creative ownership. Gen-z interaction design branding analytics stealth.</p>
+                            <div class="offer">
+                                <h4>🎁 30 Free Connects</h4>
+                                <div class="offer-button"><div class="offer-button-content">GET PROMO CODE</div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h6 style="margin: 30px 0px 20px 15px;"><b>Discussion</b></h6>
+                    
+                    <div class="discussion">
+                        <div class="comment-wrapper">
+                            <img class="maker-img" src="Assets/Adam.png" style="flex: 0 0 auto; margin-right: 10px; z-index: 100;">
+                            <div class="comment-container">
+                                <div class="comment">
+                                    <div class="maker-line">
+                                        <h4 style="height: 20px;">Adam Alpert</h4>
+                                        <div class="maker-badge">
+                                            <div class="maker-badge-text">MAKER</div>
+                                        </div>
+                                    </div>
+                                    <h5 style="height: 20px; margin-bottom: 8px;">CEO at Pangea.app</h5>
+                                    <p>Hypotheses venture scrum project social media accelerator value proposition business-to-business vesting period ownership market client. Virality funding buyer branding ramen twitter supply chain venture infographic startup series A financing beta. Disruptive supply chain seed round handshake MVP. Success iPad iPhone monetization.</p>
+                                    <p>Alpha android channels termsheet A/B testing buzz vesting period infographic business model canvas. Founders interaction design backing ramen churn rate investor startup non-disclosure agreement holy grail low hanging fruit graphical user interface research & development venture. Technology backing bootstrapping. Social media funding crowdsource ownership responsive web design buzz traction monetization hypotheses android. Traction metrics handshake business-to-consumer social media market pivot hackathon bandwidth iteration network effects creative ownership. Gen-z interaction design branding analytics stealth.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment-wrapper">
+                            <img class="maker-img" src="Assets/John.png" style="flex: 0 0 auto; margin-right: 10px; z-index: 100;">
+                            <div class="comment-container">
+                                <div class="comment">
+                                    <div class="maker-line">
+                                        <h4 style="height: 20px;">John Tambunting</h4>
+                                        <div class="maker-badge">
+                                            <div class="maker-badge-text">MAKER</div>
+                                        </div>
+                                    </div>
+                                    <h5 style="height: 20px; margin-bottom: 8px;">CTO at Pangea.app</h5>
+                                    <p>Hypotheses venture scrum project social media accelerator value proposition business-to-business vesting period ownership market client. Virality funding buyer branding ramen twitter supply chain venture infographic startup series A financing beta. Disruptive supply chain seed round handshake MVP. Success iPad iPhone monetization.</p>
+                                    <p>Alpha android channels termsheet A/B testing buzz vesting period infographic business model canvas. Founders interaction design backing ramen churn rate investor startup non-disclosure agreement holy grail low hanging fruit graphical user interface research & development venture. Technology backing bootstrapping. Social media funding crowdsource ownership responsive web design buzz traction monetization hypotheses android. Traction metrics handshake business-to-consumer social media market pivot hackathon bandwidth iteration network effects creative ownership. Gen-z interaction design branding analytics stealth.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment-wrapper">
+                            <img class="maker-img" src="Assets/Tae.png" style="flex: 0 0 auto; margin-right: 10px; z-index: 100;">
+                            <div class="comment-container">
+                                <div class="comment">
+                                    <div class="maker-line">
+                                        <h4 style="height: 20px;">Tae Sam Lee</h4>
+                                        <div class="maker-badge">
+                                            <div class="maker-badge-text">MAKER</div>
+                                        </div>
+                                    </div>
+                                    <h5 style="height: 20px; margin-bottom: 8px;">Product Designer at Pangea.app</h5>
+                                    <p>Hypotheses venture scrum project social media accelerator value proposition business-to-business vesting period ownership market client. Virality funding buyer branding ramen twitter supply chain venture infographic startup series A financing beta. Disruptive supply chain seed round handshake MVP. Success iPad iPhone monetization.</p>
+                                    <p>Alpha android channels termsheet A/B testing buzz vesting period infographic business model canvas. Founders interaction design backing ramen churn rate investor startup non-disclosure agreement holy grail low hanging fruit graphical user interface research & development venture. Technology backing bootstrapping. Social media funding crowdsource ownership responsive web design buzz traction monetization hypotheses android. Traction metrics handshake business-to-consumer social media market pivot hackathon bandwidth iteration network effects creative ownership. Gen-z interaction design branding analytics stealth.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="comment-wrapper">
+                            <img class="maker-img" src="Assets/Kacie.png" style="flex: 0 0 auto; margin-right: 10px; z-index: 100;">
+                            <div class="comment-container">
+                                <div class="comment">
+                                    <div class="maker-line">
+                                        <h4 style="height: 20px;">Kacie Galligan</h4>
+                                        <div class="maker-badge">
+                                            <div class="maker-badge-text">MAKER</div>
+                                        </div>
+                                    </div>
+                                    <h5 style="height: 20px; margin-bottom: 8px;">Project Manager at Pangea.app</h5>
+                                    <p>Hypotheses venture scrum project social media accelerator value proposition business-to-business vesting period ownership market client. Virality funding buyer branding ramen twitter supply chain venture infographic startup series A financing beta. Disruptive supply chain seed round handshake MVP. Success iPad iPhone monetization.</p>
+                                    <p>Alpha android channels termsheet A/B testing buzz vesting period infographic business model canvas. Founders interaction design backing ramen churn rate investor startup non-disclosure agreement holy grail low hanging fruit graphical user interface research & development venture. Technology backing bootstrapping. Social media funding crowdsource ownership responsive web design buzz traction monetization hypotheses android. Traction metrics handshake business-to-consumer social media market pivot hackathon bandwidth iteration network effects creative ownership. Gen-z interaction design branding analytics stealth.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

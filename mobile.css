@@ -1,0 +1,14 @@
+@media (max-width: 1099px) {
+    .two-columns {
+        flex-direction: column !important;
+    }
+
+    .vote-button {
+        flex: 0 0 auto !important;
+    }
+
+    .button-container {
+        margin-left: 15px !important;
+        margin-bottom: 20px !important;
+    }
+}
