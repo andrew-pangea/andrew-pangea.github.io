@@ -1,0 +1,1 @@
+ffmpeg -vcodec libwebp -preset icon -loop 0 -an -vsync 0 -qscale 80 -compression_level 6 -lossless 1 "Product Hunt Tester/Assets/Thumbnail.webp" -i "Thumbnail.mp4"
